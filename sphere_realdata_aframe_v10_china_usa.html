@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <title>Data Analytics by WebVR</title>
+
+
+<script src="aframe-master.js"></script>
+</head>
+
+<body>
+
+
+<a-scene>
+
+
+ 
+<a-assets>
+         <a-mixin id="textLifeExpectancy"
+          text="align: center; width: 26; anchor:center; baseline:top;
+               value: life expectancy, years"
+        ></a-mixin>
+		
+		
+		
+		
+		<a-mixin id="textIncomePerPerson"
+          text="align: center; width: 26;
+               value: Income per person, GDP/capita in $/year adjusted for inflation & prices"
+        ></a-mixin>
+		
+		<a-mixin id="textYears"
+          text="align: center; width: 26;
+               value: Years"
+        ></a-mixin>
+			
+		<a-mixin id="textYears_2"
+          text="align: center; width: 26;
+               value: Years"
+        ></a-mixin>
+		
+		
+		<a-mixin id="textChina"
+          text="align: center; width: 26;color:red;
+               value: China"
+        ></a-mixin>
+		
+		<a-mixin id="textUSA"
+          text="align: center; width: 26;color:blue;
+               value: USA"
+        ></a-mixin>
+		
+			
+		
+		
+		
+		<a-mixin id="text20"
+          text="align: center; width: 20;
+               value: 20"
+        ></a-mixin>
+		
+		<a-mixin id="text30"
+          text="align: center; width: 20;
+               value: 30"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text40"
+          text="align: center; width: 20;
+               value: 40"
+        ></a-mixin
+		
+		
+		<a-mixin id="text50"
+          text="align: center; width: 20;
+               value: 50"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text60"
+          text="align: center; width: 20;
+               value: 60"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text70"
+          text="align: center; width: 20;
+               value: 70"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text80"
+          text="align: center; width: 20;
+               value: 80"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text90"
+          text="align: center; width: 20;
+               value: 90"
+        ></a-mixin>
+		
+		
+   		<a-mixin id="text20_2"
+          text="align: center; width: 20;
+               value: 20"
+        ></a-mixin>
+		
+		<a-mixin id="text30_2"
+          text="align: center; width: 20;
+               value: 30"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text40_2"
+          text="align: center; width: 20;
+               value: 40"
+        ></a-mixin
+		
+		
+		<a-mixin id="text50_2"
+          text="align: center; width: 20;
+               value: 50"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text60_2"
+          text="align: center; width: 20;
+               value: 60"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text70_2"
+          text="align: center; width: 20;
+               value: 70"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text80_2"
+          text="align: center; width: 20;
+               value: 80"
+        ></a-mixin>
+		
+		
+		<a-mixin id="text90_2"
+          text="align: center; width: 20;
+               value: 90"
+        ></a-mixin>
+		
+		
+		
+				
+		<a-mixin id="text500"
+          text="align: center; width: 20;
+               value: 500"
+        ></a-mixin>
+		
+        <a-mixin id="text1000"
+          text="align: center; width: 20;
+               value: 1000"
+        ></a-mixin>
+		
+		<a-mixin id="text2000"
+          text="align: center; width: 20;
+               value: 2000"
+        ></a-mixin>
+		
+		<a-mixin id="text4000"
+          text="align: center; width: 20;
+               value: 4000"
+        ></a-mixin>
+		
+		<a-mixin id="text8000"
+          text="align: center; width: 20;
+               value: 8000"
+        ></a-mixin>
+		
+		<a-mixin id="text16k"
+          text="align: center; width: 20;
+               value: 16k"
+        ></a-mixin>
+		
+		<a-mixin id="text32k"
+          text="align: center; width: 20;
+               value: 32k"
+        ></a-mixin>
+		
+		<a-mixin id="text64k"
+          text="align: center; width: 20;
+               value: 64k"
+        ></a-mixin>
+		
+		<a-mixin id="text128k"
+          text="align: center; width: 20;
+               value: 128K"
+        ></a-mixin>
+		
+		
+		
+		
+		<a-mixin id="text1900"
+          text="align: center; width: 20;
+               value: 1900"
+        ></a-mixin>
+		
+        <a-mixin id="text1920"
+          text="align: center; width: 20;
+               value: 1920"
+        ></a-mixin>
+		
+		<a-mixin id="text1940"
+          text="align: center; width: 20;
+               value: 1940"
+        ></a-mixin>
+		
+		<a-mixin id="text1960"
+          text="align: center; width: 20;
+               value: 1960"
+        ></a-mixin>
+		
+		<a-mixin id="text1980"
+          text="align: center; width: 20;
+               value: 1980"
+        ></a-mixin>
+		
+		<a-mixin id="text2000"
+          text="align: center; width: 20;
+               value: 2000"
+        ></a-mixin>
+		
+		<a-mixin id="text2015"
+          text="align: center; width: 20;
+               value: 2015"
+        ></a-mixin>
+		
+		<a-mixin id="text1900_2"
+          text="align: center; width: 20;
+               value: 1900"
+        ></a-mixin>
+		
+        <a-mixin id="text1920_2"
+          text="align: center; width: 20;
+               value: 1920"
+        ></a-mixin>
+		
+		<a-mixin id="text1940_2"
+          text="align: center; width: 20;
+               value: 1940"
+        ></a-mixin>
+		
+		<a-mixin id="text1960_2"
+          text="align: center; width: 20;
+               value: 1960"
+        ></a-mixin>
+		
+		<a-mixin id="text1980_2"
+          text="align: center; width: 20;
+               value: 1980"
+        ></a-mixin>
+		
+		<a-mixin id="text2000_2"
+          text="align: center; width: 20;
+               value: 2000"
+        ></a-mixin>
+		
+		<a-mixin id="text2015_2"
+          text="align: center; width: 20;
+               value: 2015"
+        ></a-mixin>
+		
+	
+        
+</a-assets>
+
+
+  <a-box depth="20" height="20" width="40"  color="white"      opacity="0.001" position="0 0 -25"  wireframe="10"     ></a-box>  
+    
+      
+   
+<a-text mixin="textLifeExpectancy"                                             position="-25 14 -20" wrap-count="40" ></a-text>
+
+<a-text mixin="textIncomePerPerson"                                             position="0 -13 -14" wrap-count="60" ></a-text>
+
+ 
+ 
+
+
+
+
+     
+<a-text mixin="textChina"                                       position="-15 1 -30" wrap-count="40" ></a-text>
+<a-text mixin="textUSA"                                         position="12 1 -30" wrap-count="40" ></a-text>	 
+ 
+<a-text mixin="text500"                                           position="-16.56 -10 -14"  wrap-count="40" ></a-text>
+<a-text mixin="text1000"                                          position="-12.12 -10 -14"  wrap-count="40" ></a-text>
+<a-text mixin="text2000"                                          position="-7.68 -10 -14" wrap-count="40" ></a-text>
+<a-text mixin="text4000"                                          position="-3.24 -10 -14" wrap-count="40" ></a-text>
+<a-text mixin="text8000"                                          position="1.2 -10 -14"   wrap-count="40" ></a-text>
+<a-text mixin="text16k"                                           position="5.64 -10 -14"   wrap-count="40" ></a-text>
+<a-text mixin="text32k"                                           position="10.08 -10 -14"   wrap-count="40" ></a-text>
+<a-text mixin="text64k"                                           position="14.52 -10 -14"  wrap-count="40" ></a-text>
+<a-text mixin="text128k"                                          position="18 -10 -14" wrap-count="40" ></a-text>
+
+<a-text mixin="text20"                                             position="-25 -8 -17" wrap-count="40" ></a-text>
+<a-text mixin="text30"                                             position="-25 -5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text40"                                             position="-25 -2 -17" wrap-count="40" ></a-text>
+<a-text mixin="text50"                                             position="-25 0 -17" wrap-count="40" ></a-text>
+<a-text mixin="text60"                                             position="-25 2 -17" wrap-count="40" ></a-text>
+<a-text mixin="text70"                                             position="-25 5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text80"                                             position="-25 7.5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text90"                                             position="-25 10 -17" wrap-count="40" ></a-text>
+
+
+		
+<a-text mixin="textYears"                                          position="-23 -9 -40" wrap-count="40" ></a-text>		
+<a-text mixin="textYears_2"                                        position="23 -9 -40" wrap-count="40" ></a-text>			
+		
+		
+		
+		
+<a-text mixin="text1900"                                           position="-22 -10 -35" wrap-count="40" ></a-text>
+<a-text mixin="text1920"                                           position="-22 -10 -32" wrap-count="40" ></a-text>
+<a-text mixin="text1940"                                           position="-22 -10 -28.5" wrap-count="40" ></a-text>
+<a-text mixin="text1960"                                           position="-22 -10 -25" wrap-count="40" ></a-text>
+<a-text mixin="text1980"                                           position="-22 -10 -21" wrap-count="40" ></a-text>
+<a-text mixin="text2000"                                           position="-22 -10 -18" wrap-count="40" ></a-text>
+<a-text mixin="text2015"                                           position="-22 -10 -15" wrap-count="40" ></a-text>
+
+<a-text mixin="text1900_2"                                         position="22 -10 -35" wrap-count="40" ></a-text>
+<a-text mixin="text1920_2"                                         position="22 -10 -32" wrap-count="40" ></a-text>
+<a-text mixin="text1940_2"                                         position="22 -10 -28.5" wrap-count="40" ></a-text>
+<a-text mixin="text1960_2"                                         position="22 -10 -25" wrap-count="40" ></a-text>
+<a-text mixin="text1980_2"                                         position="22 -10 -21" wrap-count="40" ></a-text>
+<a-text mixin="text2000_2"                                         position="22 -10 -18" wrap-count="40" ></a-text>
+<a-text mixin="text2015_2"                                         position="22 -10 -15" wrap-count="40" ></a-text>
+
+<a-text mixin="text20_2"                                             position="25 -8 -17" wrap-count="40" ></a-text>
+<a-text mixin="text30_2"                                             position="25 -5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text40_2"                                             position="25 -2 -17" wrap-count="40" ></a-text>
+<a-text mixin="text50_2"                                             position="25 0 -17" wrap-count="40" ></a-text>
+<a-text mixin="text60_2"                                             position="25 2 -17" wrap-count="40" ></a-text>
+<a-text mixin="text70_2"                                             position="25 5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text80_2"                                             position="25 7.5 -17" wrap-count="40" ></a-text>
+<a-text mixin="text90_2"                                             position="25 10 -17" wrap-count="40" ></a-text> 
+    
+<!-- line text20 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -8 -31.5"></a-circle>
+
+
+<!-- end of text20 -->
+
+
+<!-- line text30 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -5 -31.5"></a-circle>
+
+
+<!-- end of text30 -->
+
+
+
+
+
+<!-- line text40 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 -2 -31.5"></a-circle>
+
+
+<!-- end of text40 -->
+
+
+
+<!-- line text60 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 2 -31.5"></a-circle>
+
+
+<!-- end of text60 -->
+
+
+
+
+<!-- line text70 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 5 -31.5"></a-circle>
+
+
+<!-- end of text70 -->
+
+
+
+<!-- line text90 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 10 -31.5"></a-circle>
+
+
+<!-- end of text90 -->
+
+
+
+
+<!-- line text80 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-25 7.5 -31.5"></a-circle>
+
+
+<!-- end of text80 -->
+
+
+
+
+
+<!--    the right y - axis -->
+    
+<!-- line text20 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -8 -31.5"></a-circle>
+
+
+<!-- end of text20 -->
+
+
+<!-- line text30 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -5 -31.5"></a-circle>
+
+
+<!-- end of text30 -->
+
+
+
+
+
+<!-- line text40 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 -2 -31.5"></a-circle>
+
+
+<!-- end of text40 -->
+
+
+
+<!-- line text60 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 2 -31.5"></a-circle>
+
+
+<!-- end of text60 -->
+
+
+
+
+<!-- line text70 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 5 -31.5"></a-circle>
+
+
+<!-- end of text70 -->
+
+
+
+<!-- line text90 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 10 -31.5"></a-circle>
+
+
+<!-- end of text90 -->
+
+
+
+
+<!-- line text80 -->
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -18.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -19"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -19.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -20"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -20.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -21.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -22"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -22.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -23"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -23.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -24"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -24.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -25"></a-circle>
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -25.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -26"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -26.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -27"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -27.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -28"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -29"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -29.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -30"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -30.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -31"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="25 7.5 -31.5"></a-circle>
+
+
+<!-- end of text80 -->
+
+
+
+
+<!-- end of the right y - axis -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1940 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -28.5"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -28.5"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -28.5"></a-circle>	
+
+
+<!-- end of 1940 -->
+
+
+<!-- 1960 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -25"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -25"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -25"></a-circle>	
+
+
+<!-- end of 1960 -->
+
+<!-- 1920 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -32"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -32"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -32"></a-circle>	
+
+
+<!-- end of 1920 -->
+
+
+
+<!-- 2000 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -18"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -18"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -18"></a-circle>	
+
+
+<!-- end of 2000 -->
+
+
+
+<!-- 1900 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -35"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -35"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -35"></a-circle>	
+
+
+<!-- end of 1900 -->
+
+
+
+<!-- 1980 -->
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-20 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-19 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-18 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-17 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-16 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-15 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-14 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-13 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-12 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-11 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-10 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-9 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-8 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-7 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-6 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-4 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-3 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-2 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-1 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="-0.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -21"></a-circle>	
+
+
+
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="20 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="19 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="18 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="17 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="16 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="15 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="14 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="13 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="12 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="11 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="10 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="9 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="8 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="7 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="6 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="4 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="3 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="2 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="1 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0.5 -10 -21"></a-circle>
+<a-circle color="white" radius="0.1" rotation="0 0 0"  opacity=".4" position="0 -10 -21"></a-circle>	
+
+
+<!-- end of 1980 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+											
+     var tableauXGDPUSA = new Array(117);
+     var tableauYLifeUSA = new Array(117);
+     var tableauZCountryUSA =new Array(117);
+
+ <!--for the sphere scaling based on population-->
+	 var tableauScaleUSA = new Array(11);
+	 
+	 
+<!-- GDP for USA from 1900 till 2015 -->
+	 
+	 
+	 tableauXGDPUSA[0]=6534.9 ; 
+	 tableauXGDPUSA[1]= 7130.87 ; 
+	 tableauXGDPUSA[2]= 7061.81 ; 
+	 tableauXGDPUSA[3]= 7269.9;
+	 tableauXGDPUSA[4]= 7044.08;
+	 tableauXGDPUSA[5]=7415.7 ;
+	 tableauXGDPUSA[6]=8113.73 ;
+	 tableauXGDPUSA[7]=8091 ;
+	 tableauXGDPUSA[8]=7285.43 ;
+	 tableauXGDPUSA[9]=8015.28 ;
+	 tableauXGDPUSA[10]= 7929.4;
+	 tableauXGDPUSA[11]=8060.31 ;	 
+	 tableauXGDPUSA[12]= 8307.94 ;
+	 tableauXGDPUSA[13]= 8467.74; 	 
+	 tableauXGDPUSA[14]= 7666.57; 
+	 tableauXGDPUSA[15]=7770.39 ; 	 
+	 tableauXGDPUSA[16]= 8720.08;
+	 tableauXGDPUSA[17]= 8383.09;
+	 tableauXGDPUSA[18]= 9040.04;
+	 tableauXGDPUSA[19]= 9074.26;	 
+	 tableauXGDPUSA[20]= 8869.66;
+	 tableauXGDPUSA[21]= 8502.89;
+	 tableauXGDPUSA[22]= 8849.72;
+	 tableauXGDPUSA[23]= 9847.1;
+	 tableauXGDPUSA[24]= 9956.29 ;
+	 tableauXGDPUSA[25]= 10035.96;
+	 tableauXGDPUSA[26]= 10547.18;
+	 tableauXGDPUSA[27]= 10505.74;
+	 tableauXGDPUSA[28]= 10494.31;
+	 tableauXGDPUSA[29]= 11020.48; 
+	 tableauXGDPUSA[30]= 9924.6; 
+	 tableauXGDPUSA[31]= 9091.77;
+	 tableauXGDPUSA[32]= 7840.95;
+	 tableauXGDPUSA[33]=7630.96;
+	 tableauXGDPUSA[34]=8168.82;
+	 tableauXGDPUSA[35]=8733.09;
+	 tableauXGDPUSA[36]=9910.5;
+	 tableauXGDPUSA[37]=10271.91;
+	 tableauXGDPUSA[38]=9786.83;	 
+	 tableauXGDPUSA[39]=10480.59;
+	 tableauXGDPUSA[40]=11197.66;
+	 tableauXGDPUSA[41]=13108.31;
+	 tableauXGDPUSA[42]=15561.09;
+     tableauXGDPUSA[43]= 18399.9; 
+	 tableauXGDPUSA[44]= 19702.28; 
+	 tableauXGDPUSA[45]= 18704.18;
+	 tableauXGDPUSA[46]= 14691.17;
+	 tableauXGDPUSA[47]= 14195.08;
+	 tableauXGDPUSA[48]= 14480.34;
+	 tableauXGDPUSA[49]= 14287.34;
+	 tableauXGDPUSA[50]= 15273.94;
+	 tableauXGDPUSA[51]= 16160.37;
+	 tableauXGDPUSA[52]=16478.74 ;
+	 tableauXGDPUSA[53]= 16953.29;
+	 tableauXGDPUSA[54]= 16548.33;
+	 tableauXGDPUSA[55]=17407.37 ;	 
+	 tableauXGDPUSA[56]=17435.21 ; 
+	 tableauXGDPUSA[57]= 17444.32; 
+	 tableauXGDPUSA[58]=16981.92 ;
+	 tableauXGDPUSA[59]=17939.83 ;
+	 tableauXGDPUSA[60]= 18096.87;
+	 tableauXGDPUSA[61]= 18213.89;
+	 tableauXGDPUSA[62]=19017.82 ;
+	 tableauXGDPUSA[63]=19556.74 ;
+	 tableauXGDPUSA[64]= 20403.75;
+	 tableauXGDPUSA[65]=21435.93 ;
+	 tableauXGDPUSA[66]=22577.84 ;
+	 tableauXGDPUSA[67]=22891.75 ;
+	 tableauXGDPUSA[68]= 23743.05;	 
+	 tableauXGDPUSA[69]= 24248.6;	 
+	 tableauXGDPUSA[70]=24009.68 ; 
+	 tableauXGDPUSA[71]=24448.11 ; 
+	 tableauXGDPUSA[72]= 25469.8; 
+	 tableauXGDPUSA[73]=26660.68 ;
+	 tableauXGDPUSA[74]=26344.26 ;
+	 tableauXGDPUSA[75]= 26012.57;
+	 tableauXGDPUSA[76]= 27117.14;
+	 tableauXGDPUSA[77]= 28061.91;
+	 tableauXGDPUSA[78]=29350.22 ;
+	 tableauXGDPUSA[79]=30015.44 ;
+	 tableauXGDPUSA[80]= 29676.73;
+	 tableauXGDPUSA[81]=30121.13 ;
+	 tableauXGDPUSA[82]=29273.78 ;
+	 tableauXGDPUSA[83]= 30224.33;	 
+	 tableauXGDPUSA[84]= 32145.3; 
+	 tableauXGDPUSA[85]= 33095.24; 
+	 tableauXGDPUSA[86]= 33923.95; 
+	 tableauXGDPUSA[87]=34805.12 ;
+	 tableauXGDPUSA[88]=35942.12 ;
+	 tableauXGDPUSA[89]=36836.44 ;	 
+	 tableauXGDPUSA[90]=37062.13 ;
+	 tableauXGDPUSA[91]= 36543.08;
+	 tableauXGDPUSA[92]=37321.13 ;
+	 tableauXGDPUSA[93]=37843.57 ;	 
+	 tableauXGDPUSA[94]= 38891.7;
+	 tableauXGDPUSA[95]=39476.27 ;
+	 tableauXGDPUSA[96]=40500.8 ;
+	 tableauXGDPUSA[97]=41811.64 ;	 
+	 tableauXGDPUSA[98]=43166.08 ; 
+	 tableauXGDPUSA[99]=44672.55 ;
+	 tableauXGDPUSA[100]= 45986.05;
+    tableauXGDPUSA[101]= 45977.55;
+	tableauXGDPUSA[102]=46366.58 ;
+	tableauXGDPUSA[103]= 47260.04;
+	tableauXGDPUSA[104]=48597.34 ;
+	tableauXGDPUSA[105]= 49762.24;	
+	tableauXGDPUSA[106]=50598.95 ;
+	tableauXGDPUSA[107]=51011.43 ;
+	tableauXGDPUSA[108]= 50383.84;
+	tableauXGDPUSA[109]=48557.87 ;
+	tableauXGDPUSA[110]= 49372.83;
+	tableauXGDPUSA[111]=49781.8 ;
+	tableauXGDPUSA[112]=50502.76 ;
+	tableauXGDPUSA[113]= 50972.59;
+	 tableauXGDPUSA[114]=51775.09; 
+	 tableauXGDPUSA[115]=52704.2; 
+	 tableauXGDPUSA[116]=52704.2;
+
+
+
+	 
+
+<!-- life expectancy for USA from 1900 till 2015 -->
+
+	 tableauYLifeUSA[0]= 39.41; 
+	 tableauYLifeUSA[1]= 45.21; 
+	 tableauYLifeUSA[2]= 49.3; 
+	 tableauYLifeUSA[3]=50.5 ;
+	 tableauYLifeUSA[4]=50.6 ;
+	 tableauYLifeUSA[5]=49.6 ;
+	 tableauYLifeUSA[6]= 50.3;
+	 tableauYLifeUSA[7]= 50.1;
+	 tableauYLifeUSA[8]= 50.2;
+	 tableauYLifeUSA[9]=51.9 ;
+	 tableauYLifeUSA[10]= 52.8;
+	 tableauYLifeUSA[11]= 51.8;
+	 tableauYLifeUSA[12]= 53.4;
+	 tableauYLifeUSA[13]=54.1 ; 	 
+	 tableauYLifeUSA[14]= 53.5; 
+	 tableauYLifeUSA[15]=54.6 ; 
+	 tableauYLifeUSA[16]=55.1 ;
+	 tableauYLifeUSA[17]=54.2 ;
+	 tableauYLifeUSA[18]= 54;
+	 tableauYLifeUSA[19]= 47.2;
+	 tableauYLifeUSA[20]= 55.3;
+	 tableauYLifeUSA[21]= 55.4;
+	 tableauYLifeUSA[22]= 58.2;
+	 tableauYLifeUSA[23]= 58.1;
+	 tableauYLifeUSA[24]=57.5 ;
+	 tableauYLifeUSA[25]=58.5 ;
+	 tableauYLifeUSA[26]= 58.5;
+	 tableauYLifeUSA[27]= 57.9;				
+	 tableauYLifeUSA[28]=59.4 ;
+	 tableauYLifeUSA[29]= 58.3; 
+	 tableauYLifeUSA[30]= 58.5; 
+	 tableauYLifeUSA[31]= 59.6;
+	 tableauYLifeUSA[32]= 60.3;
+	 tableauYLifeUSA[33]= 61;
+	 tableauYLifeUSA[34]= 60.88;
+	 tableauYLifeUSA[35]= 60.23;
+	 tableauYLifeUSA[36]= 60.89;
+	 tableauYLifeUSA[37]= 60.35;
+	 tableauYLifeUSA[38]= 61.05;
+	 tableauYLifeUSA[39]= 62.39;
+	 tableauYLifeUSA[40]= 63.07;
+	 tableauYLifeUSA[41]= 63.23;
+	 tableauYLifeUSA[42]= 63.8;
+	 tableauYLifeUSA[43]=64.59 ; 
+	 tableauYLifeUSA[44]=64.3 ; 
+	 tableauYLifeUSA[45]=65.09 ;
+	 tableauYLifeUSA[46]=65.58 ;
+	 tableauYLifeUSA[47]=66.28 ;
+	 tableauYLifeUSA[48]= 66.69;
+	 tableauYLifeUSA[49]=67.25 ;
+	 tableauYLifeUSA[50]= 67.63 ;
+	 tableauYLifeUSA[51]= 68.07;
+	 tableauYLifeUSA[52]= 68.17;
+	 tableauYLifeUSA[53]= 68.39;
+	 tableauYLifeUSA[54]= 68.72;
+	 tableauYLifeUSA[55]= 69.5;
+	 tableauYLifeUSA[56]= 69.56; 
+	 tableauYLifeUSA[57]= 69.64; 
+	 tableauYLifeUSA[58]= 69.41;
+	 tableauYLifeUSA[59]= 69.67;
+	 tableauYLifeUSA[60]= 69.89 ;
+	 tableauYLifeUSA[61]=69.83 ;
+	 tableauYLifeUSA[62]= 70.24;
+	 tableauYLifeUSA[63]= 70.11;
+	 tableauYLifeUSA[64]=69.94 ;
+	 tableauYLifeUSA[65]=70.19 ;
+	 tableauYLifeUSA[66]= 70.24;
+	 tableauYLifeUSA[67]=70.21 ;
+	 tableauYLifeUSA[68]= 70.52;
+	 tableauYLifeUSA[69]= 70.22;
+	 tableauYLifeUSA[70]= 70.48; 
+	 tableauYLifeUSA[71]= 70.74; 
+	 tableauYLifeUSA[72]= 71.09; 
+	 tableauYLifeUSA[73]= 71.18;
+	 tableauYLifeUSA[74]= 71.4;
+	 tableauYLifeUSA[75]= 71.97;
+	 tableauYLifeUSA[76]= 72.54;
+	 tableauYLifeUSA[77]= 72.85;
+	 tableauYLifeUSA[78]= 73.22;
+	 tableauYLifeUSA[79]= 73.42 ;
+	 tableauYLifeUSA[80]= 73.83 ;
+	 tableauYLifeUSA[81]= 73.74;
+	 tableauYLifeUSA[82]= 74.12;
+	 tableauYLifeUSA[83]= 74.47;
+	 tableauYLifeUSA[84]= 74.56; 
+	 tableauYLifeUSA[85]= 74.69; 
+	 tableauYLifeUSA[86]= 74.67; 
+	 tableauYLifeUSA[87]= 74.75 ;
+	 tableauYLifeUSA[88]= 74.88;
+	 tableauYLifeUSA[89]= 74.86;
+	 tableauYLifeUSA[90]= 75.14;
+	 tableauYLifeUSA[91]= 75.41;
+	 tableauYLifeUSA[92]= 75.56;
+	 tableauYLifeUSA[93]= 75.81;
+	 tableauYLifeUSA[94]=75.61 ;
+	 tableauYLifeUSA[95]= 75.78;
+	 tableauYLifeUSA[96]= 75.89;
+	 tableauYLifeUSA[97]= 76.22;
+	 tableauYLifeUSA[98]=76.54 ; 
+	 tableauYLifeUSA[99]= 76.71;
+	 tableauYLifeUSA[100]=76.73;
+     tableauYLifeUSA[101]=76.87;
+	 tableauYLifeUSA[102]=76.98;
+	 tableauYLifeUSA[103]=77.05;
+	 tableauYLifeUSA[104]=77.21;
+	 tableauYLifeUSA[105]=77.62;
+	 tableauYLifeUSA[106]=77.62;
+	 tableauYLifeUSA[107]=77.91;
+	 tableauYLifeUSA[108]=78.17;
+	 tableauYLifeUSA[109]=78.26;
+	 tableauYLifeUSA[110]=78.63;
+	 tableauYLifeUSA[111]=78.83;
+	 tableauYLifeUSA[112]=78.7;	 
+	 tableauYLifeUSA[113]=78.7;
+	 tableauYLifeUSA[114]=78.7;
+	 tableauYLifeUSA[115]=78.7;
+	 tableauYLifeUSA[116]=78.7;
+	 
+	 
+	 <!-- for USA 1900 till 2015 -->
+	   
+	 
+	 
+	 
+	 tableauScaleUSA[0]=76391000 /10000000 ;     <!--  1900  -->   
+	 tableauScaleUSA[1]=92767000 /10000000 ;     <!--  1910  -->   
+	 tableauScaleUSA[2]=106881000 /10000000 ;     <!--  1920  -->   
+	 tableauScaleUSA[3]=123668000 /10000000;     <!--  1930  -->
+	 tableauScaleUSA[4]=132637000/10000000 ;     <!--  1940  -->
+	 tableauScaleUSA[5]=152271000/10000000 ;     <!--  1950  -->
+	 tableauScaleUSA[6]=180671000 /10000000 ;     <!--  1960  -->
+	 tableauScaleUSA[7]=205052000 /10000000 ;     <!--  1970  -->
+	 tableauScaleUSA[8]=227726463 /10000000 ;     <!--  1980  -->
+	 tableauScaleUSA[9]=250131894 /10000000 ;    <!--  1990  -->
+	 tableauScaleUSA[10]=282158000 /10000000 ;   <!--  2000  -->	 
+
+	 	 
+	 for(i = 0; i < 11; i++) {
+	 
+     	 tableauScaleUSA[i] = Math.pow( (3* Math.round(tableauScaleUSA[i]) )/(4*Math.PI) , 1/3) ;	 
+ 		 tableauScaleUSA[i] =  tableauScaleUSA[i] /  2.627 ;     <!-- tableauScaleUSA[0]= 2.627 -->  
+                		                                              
+	 }          
+	 
+	 
+	 
+		 
+	 
+	 for(i = 0; i < 117; i++) {
+	     tableauZCountryUSA[i] = -35 + (0.15*i) ;
+		 		 
+	 }
+    
+
+	  
+    	
+	
+	
+     for(i = 0; i < 117; i++) {
+
+     var mysphere = document.createElement('a-entity');	 
+	 
+     
+<!-- tableauZCountryUSA[i] = ( -15).toString() ;  -->
+     tableauZCountryUSA[i] = ( tableauZCountryUSA[i]).toString() ;
+	 tableauYLifeUSA[i]=((tableauYLifeUSA[i]-25)*1/3)-10;
+	 tableauXGDPUSA[i]=((Math.log(tableauXGDPUSA[i])-4) *5)-20  ;     	 
+	
+	 var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"60000"); 
+	 mysphere.setAttribute('visible',"true");
+
+     
+	
+	 myrotate.setAttribute('from',    tableauXGDPUSA[0]+" "+tableauYLifeUSA[0]+" "+tableauZCountryUSA[0]);  
+ 
+ 
+	 myrotate.setAttribute('to',tableauXGDPUSA[i]+" "+tableauYLifeUSA[i]+" "+tableauZCountryUSA[i]   ); 
+	 
+	 
+	<!-- myrotate.setAttribute('delay',"1000");--> 
+	 
+	 
+	 mysphere.appendChild(myrotate);  
+	 mysphere.setAttribute('geometry',"primitive:sphere");
+	 mysphere.setAttribute('material',"color:blue");     	 
+	 mysphere.setAttribute('opacity',"0.5");
+	 
+<!--	 mysphere.setAttribute('radius', (Math.random()*100).toString());   -->
+  
+      if (  0 <= i  &&  i< 10 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[0] + " " + tableauScaleUSA[0] + " " + tableauScaleUSA[0]);
+}
+	 
+	if (  10 <= i && i< 20 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[1] + " " + tableauScaleUSA[1] + " " + tableauScaleUSA[1]);
+}
+	 
+	 if ( 20 <= i && i< 30 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[2] + " " + tableauScaleUSA[2] + " " + tableauScaleUSA[2]);
+}
+	 
+	 if (30 <= i && i< 40) {
+     mysphere.setAttribute('scale',tableauScaleUSA[3] + " " + tableauScaleUSA[3] + " " + tableauScaleUSA[3]);
+}
+	 
+	 if (40 <= i &&  i< 50) {
+     mysphere.setAttribute('scale',tableauScaleUSA[4] + " " + tableauScaleUSA[4] + " " + tableauScaleUSA[4]);
+}
+	 
+	 if (50 <= i && i< 60 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[5] + " " + tableauScaleUSA[5] + " " + tableauScaleUSA[5]);
+}
+	 
+	 if ( 60 <= i &&  i< 70 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[6] + " " + tableauScaleUSA[6] + " " + tableauScaleUSA[6]);
+}
+	 
+	 if (70 <= i && i< 80 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[7] + " " + tableauScaleUSA[7] + " " + tableauScaleUSA[7]);
+}
+	 
+	 if (80 <= i && i< 90 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[8] + " " + tableauScaleUSA[8].toString() + " " + tableauScaleUSA[8]);
+}
+	 
+	
+	 if (90 <= i  && i < 100 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[9] + " " + tableauScaleUSA[9].toString() + " " + tableauScaleUSA[9]);
+} 
+	
+  	
+	 
+	  if (100 <= i   &&  i< 117 ) {
+     mysphere.setAttribute('scale',tableauScaleUSA[10] + " " + tableauScaleUSA[10] + " " + tableauScaleUSA[10]);
+}
+	
+   
+	
+ 
+  
+  
+  
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mysphere);
+	 
+	 	 
+	 }
+	 
+</script>
+
+
+ 
+
+
+<script>
+
+	 <!--for the sphere position -->																
+     var tableauXGDPCHINA = new Array(117);
+	 var tableauYLifeCHINA = new Array(117);
+     var tableauZCountryCHINA = new Array(117);
+	 <!--for the sphere scaling based on population-->
+	 var tableauScaleCHINA = new Array(11);
+	 
+	 
+<!-- GDP for CHINA from 1900 till 2015	 
+
+     tableauXGDPCHINA[0]=200 ; 
+	 tableauXGDPCHINA[1]=  220; 
+	 tableauXGDPCHINA[2]=  240; 
+	 tableauXGDPCHINA[3]=260 ;
+	 tableauXGDPCHINA[4]= 280;
+	 tableauXGDPCHINA[5]= 290;
+	 tableauXGDPCHINA[6]= 300;
+	 tableauXGDPCHINA[7]= 310;
+	 tableauXGDPCHINA[8]= 320 ;
+	 tableauXGDPCHINA[9]= 330;
+	 tableauXGDPCHINA[10]=340;
+	 tableauXGDPCHINA[11]=350 ;	 
+	 tableauXGDPCHINA[12]=360 ;
+	 tableauXGDPCHINA[13]=370; 	 
+	 tableauXGDPCHINA[14]=380; 
+	 tableauXGDPCHINA[15]= 390; 	 
+	 tableauXGDPCHINA[16]=400;
+	 tableauXGDPCHINA[17]=410;
+	 tableauXGDPCHINA[18]=420;    
+	 tableauXGDPCHINA[19]=430;	 
+	 tableauXGDPCHINA[20]=435;
+	 tableauXGDPCHINA[21]=440;
+	 tableauXGDPCHINA[22]=445;
+	 tableauXGDPCHINA[23]=445;
+	 tableauXGDPCHINA[24]= 444.96;
+	 tableauXGDPCHINA[25]=444.96;
+	 tableauXGDPCHINA[26]=444.96;
+	 tableauXGDPCHINA[27]=444.96;
+	 tableauXGDPCHINA[28]=444.96;
+	 tableauXGDPCHINA[29]=444.96; 
+	 tableauXGDPCHINA[30]=444.96; 
+	 tableauXGDPCHINA[31]= 444.96;
+	 tableauXGDPCHINA[32]= 490;
+	 tableauXGDPCHINA[33]=490;
+	 tableauXGDPCHINA[34]=490;
+	 tableauXGDPCHINA[35]=490;
+	 tableauXGDPCHINA[36]=500;
+	 tableauXGDPCHINA[37]=500;
+	 tableauXGDPCHINA[38]=500;	 
+	 tableauXGDPCHINA[39]=500;
+	 tableauXGDPCHINA[40]=510;
+	 tableauXGDPCHINA[41]=510;
+	 tableauXGDPCHINA[42]=520;
+     tableauXGDPCHINA[43]=530; 
+	 tableauXGDPCHINA[44]=530; 
+	 tableauXGDPCHINA[45]=540;
+	 tableauXGDPCHINA[46]=540;
+	 tableauXGDPCHINA[47]=550;
+	 tableauXGDPCHINA[48]=550;
+	 tableauXGDPCHINA[49]=560;
+	 tableauXGDPCHINA[50]=570;
+	 tableauXGDPCHINA[51]=570;
+	 tableauXGDPCHINA[52]= 580;
+	 tableauXGDPCHINA[53]=580;
+	 tableauXGDPCHINA[54]=580;
+	 tableauXGDPCHINA[55]= 590;	 
+	 tableauXGDPCHINA[56]= 600; 
+	 tableauXGDPCHINA[57]=518.88; 
+	 tableauXGDPCHINA[58]= 563.25;
+	 tableauXGDPCHINA[59]= 559.99;
+	 tableauXGDPCHINA[60]=540.21;
+	 tableauXGDPCHINA[61]=451.08;
+	 tableauXGDPCHINA[62]= 449.08;
+	 tableauXGDPCHINA[63]=481.59 ;
+	 tableauXGDPCHINA[64]=526.08;
+	 tableauXGDPCHINA[65]=572.4 ;
+	 tableauXGDPCHINA[66]= 608.89;
+	 tableauXGDPCHINA[67]= 576.75;
+	 tableauXGDPCHINA[68]=550.63;	 
+	 tableauXGDPCHINA[69]=700;	 
+	 tableauXGDPCHINA[70]=700 ; 
+	 tableauXGDPCHINA[71]=710 ; 
+	 tableauXGDPCHINA[72]=651.32; 
+	 tableauXGDPCHINA[73]= 684.01;
+     tableauXGDPCHINA[74]=681.36 ;
+	 tableauXGDPCHINA[75]=710.76;
+	 tableauXGDPCHINA[76]=695.66;
+	 tableauXGDPCHINA[77]= 840;
+	 tableauXGDPCHINA[78]=860 ;
+	 tableauXGDPCHINA[79]=880 ;
+	 tableauXGDPCHINA[80]=900;
+   	 tableauXGDPCHINA[81]=905.76 ;
+	 tableauXGDPCHINA[82]=967.65 ;
+	 tableauXGDPCHINA[83]=1026.14;	 
+	 tableauXGDPCHINA[84]=1138.82; 
+	 tableauXGDPCHINA[85]=1239.41; 
+	 tableauXGDPCHINA[86]=1302.93; 	 
+	 tableauXGDPCHINA[87]=1417.18 ;
+	 tableauXGDPCHINA[88]= 1493.05;
+	 tableauXGDPCHINA[89]=1496.43 ;	 
+	 tableauXGDPCHINA[90]= 1526.41;
+	 tableauXGDPCHINA[91]=1645.67;
+	 tableauXGDPCHINA[92]= 1856.72;
+	 tableauXGDPCHINA[93]= 2090.04;	 
+	 tableauXGDPCHINA[94]=2336.28;
+	 tableauXGDPCHINA[95]=2564.07 ;
+	 tableauXGDPCHINA[96]=2789.25 ;
+	 tableauXGDPCHINA[97]= 3015.7;	 
+	 tableauXGDPCHINA[98]= 3221; 
+	 tableauXGDPCHINA[99]= 3438.07;
+	 tableauXGDPCHINA[100]=3700.74;
+    tableauXGDPCHINA[101]=3980.36;
+	tableauXGDPCHINA[102]=4314.79 ;
+	tableauXGDPCHINA[103]=4718.33;	
+	tableauXGDPCHINA[104]=5164.64 ;
+	tableauXGDPCHINA[105]=5719.46;	
+	tableauXGDPCHINA[106]= 6411.04;
+	tableauXGDPCHINA[107]=7285.27 ;
+	tableauXGDPCHINA[108]=7947.79;
+	tableauXGDPCHINA[109]= 8651.73;
+	tableauXGDPCHINA[110]=9525.82;
+	tableauXGDPCHINA[111]=10384.37 ;	
+	tableauXGDPCHINA[112]= 11145.75;
+	tableauXGDPCHINA[113]=11951.25;
+	 tableauXGDPCHINA[114]=12758.65; 
+	 tableauXGDPCHINA[115]=13571.69; 
+	 tableauXGDPCHINA[116]=13571.69;
+
+	 
+
+	 <!-- for china 1900 till 2015
+
+     tableauYLifeCHINA[0]=32 ; 
+	 tableauYLifeCHINA[1]= 32; 
+	 tableauYLifeCHINA[2]= 34; 
+	 tableauYLifeCHINA[3]= 34;
+	 tableauYLifeCHINA[4]= 35;
+	 tableauYLifeCHINA[5]= 37;
+	 tableauYLifeCHINA[6]=37;
+	 tableauYLifeCHINA[7]=37;
+	 tableauYLifeCHINA[8]=41;
+	 tableauYLifeCHINA[9]= 41;
+	 tableauYLifeCHINA[10]= 41;
+	 tableauYLifeCHINA[11]= 41;
+	 tableauYLifeCHINA[12]= 44.589;
+	 tableauYLifeCHINA[13]= 44.589; 	 
+	 tableauYLifeCHINA[14]=44.589; 
+	 tableauYLifeCHINA[15]= 44.589; 
+	 tableauYLifeCHINA[16]=44.589;
+	 tableauYLifeCHINA[17]=45.005 ;
+	 tableauYLifeCHINA[18]=45.005;
+	 tableauYLifeCHINA[19]=45.005;
+	 tableauYLifeCHINA[20]=45.005;
+	 tableauYLifeCHINA[21]=45.005;
+	 tableauYLifeCHINA[22]=45.005;
+	 tableauYLifeCHINA[23]=45.005;
+	 tableauYLifeCHINA[24]=43.972 ;
+	 tableauYLifeCHINA[25]=43.972 ;
+	 tableauYLifeCHINA[26]=43.972;
+	 tableauYLifeCHINA[27]=43.972;				
+	 tableauYLifeCHINA[28]= 43.972;
+	 tableauYLifeCHINA[29]=43.972; 
+	 tableauYLifeCHINA[30]=43.972; 
+     tableauYLifeCHINA[31]=44.6;
+	 tableauYLifeCHINA[32]=44.8;
+	 tableauYLifeCHINA[33]=45;
+	 tableauYLifeCHINA[34]=46;
+	 tableauYLifeCHINA[35]=47;
+	 tableauYLifeCHINA[36]=48;
+	 tableauYLifeCHINA[37]=50;
+	 tableauYLifeCHINA[38]=52;
+	 tableauYLifeCHINA[39]=54;
+	 tableauYLifeCHINA[40]=56;
+	 tableauYLifeCHINA[41]=59.42;	 
+	 tableauYLifeCHINA[42]=62.577;
+	 tableauYLifeCHINA[43]= 63.577; 
+	 tableauYLifeCHINA[44]= 64.577; 
+	 tableauYLifeCHINA[45]= 64.577;
+	 tableauYLifeCHINA[46]= 64.577;
+	 tableauYLifeCHINA[47]=64.577;
+	 tableauYLifeCHINA[48]= 64.577;
+	 tableauYLifeCHINA[49]= 64.577;
+	 tableauYLifeCHINA[50]=64.577 ;
+	 tableauYLifeCHINA[51]=66.286;
+	 tableauYLifeCHINA[52]=66.286;
+	 tableauYLifeCHINA[53]=66.286;
+	 tableauYLifeCHINA[54]=66.286;
+	 tableauYLifeCHINA[55]=66.286;
+	 tableauYLifeCHINA[56]=66.286; 
+	 tableauYLifeCHINA[57]=66.286; 
+	 tableauYLifeCHINA[58]=66.286;
+	 tableauYLifeCHINA[59]=67;
+	 tableauYLifeCHINA[60]=67 ;
+	 tableauYLifeCHINA[61]= 67;	 
+	 tableauYLifeCHINA[62]=67.711;
+	 tableauYLifeCHINA[63]=67.711;
+	 tableauYLifeCHINA[64]= 67.711;
+	 tableauYLifeCHINA[65]= 67.711;
+	 tableauYLifeCHINA[66]=67.711;
+	 tableauYLifeCHINA[67]= 67.711;
+	 tableauYLifeCHINA[68]=67.711;
+	 tableauYLifeCHINA[69]=67.711;
+	 tableauYLifeCHINA[70]=67.711; 
+	 tableauYLifeCHINA[71]=67.711; 
+	 tableauYLifeCHINA[72]=68.915; 
+	 tableauYLifeCHINA[73]=68.915;
+	 tableauYLifeCHINA[74]=68.915;
+	 tableauYLifeCHINA[75]=68.915;
+	 tableauYLifeCHINA[76]=68.915;
+	 tableauYLifeCHINA[77]=68.915;
+	 tableauYLifeCHINA[78]=68.915;
+	 tableauYLifeCHINA[79]= 68.915;
+	 tableauYLifeCHINA[80]= 68.915;	 
+	 tableauYLifeCHINA[81]=69.953;
+	 tableauYLifeCHINA[82]=69.953;
+	 tableauYLifeCHINA[83]=69.953;
+	 tableauYLifeCHINA[84]=69.953; 
+	 tableauYLifeCHINA[85]=69.953; 
+	 tableauYLifeCHINA[86]=69.953; 
+	 tableauYLifeCHINA[87]= 69.953 ;
+	 tableauYLifeCHINA[88]= 69.953;
+	 tableauYLifeCHINA[89]= 69.953;
+	 tableauYLifeCHINA[90]=69.953 ;
+	 tableauYLifeCHINA[91]= 70.858;
+	 tableauYLifeCHINA[92]= 70.858;
+	 tableauYLifeCHINA[93]= 70.858;
+	 tableauYLifeCHINA[94]= 70.858;
+	 tableauYLifeCHINA[95]=70.858;
+	 tableauYLifeCHINA[96]=70.858;
+	 tableauYLifeCHINA[97]=70.858;
+	 tableauYLifeCHINA[98]= 70.858; 
+	 tableauYLifeCHINA[99]=70.858;
+	 tableauYLifeCHINA[100]=73.408;
+     tableauYLifeCHINA[101]=73.408;
+	 tableauYLifeCHINA[102]=73.408;
+	 tableauYLifeCHINA[103]=73.408;
+	 tableauYLifeCHINA[104]=73.408;
+	 tableauYLifeCHINA[105]=73.408;
+	 tableauYLifeCHINA[106]=73.408;
+	 tableauYLifeCHINA[107]=73.408;
+	 tableauYLifeCHINA[108]=74.44;
+	 tableauYLifeCHINA[109]=74.44;
+	 tableauYLifeCHINA[110]=74.44;
+	 tableauYLifeCHINA[111]=74.44;
+	 tableauYLifeCHINA[112]=74.44;
+	 tableauYLifeCHINA[113]=74.44;
+	 tableauYLifeCHINA[114]=74.44;
+	 tableauYLifeCHINA[115]=74.44;
+	 tableauYLifeCHINA[116]=74.44;
+	 
+	 <!-- for china 1900 till 2015 -->
+	   
+		 
+	 
+	 tableauScaleCHINA[0]=400000000 /10000000 ;     <!--  1900  -->
+	 tableauScaleCHINA[1]=423000000 /10000000 ;     <!--  1910  -->
+	 tableauScaleCHINA[2]=472000000 /10000000 ;     <!--  1920  -->
+	 tableauScaleCHINA[3]=489000000 /10000000 ;     <!--  1930  -->
+	 tableauScaleCHINA[4]=518770000 /10000000 ;     <!--  1940  -->
+	 tableauScaleCHINA[5]=546815000 /10000000 ;     <!--  1950  -->
+	 tableauScaleCHINA[6]=667070000 /10000000 ;     <!--  1960  -->
+	 tableauScaleCHINA[7]=818315000 /10000000 ;     <!--  1970  -->
+	 tableauScaleCHINA[8]=981861000 /10000000 ;     <!--  1980  -->
+	 tableauScaleCHINA[9]=1135185000  /10000000 ;    <!--  1990  -->
+	 tableauScaleCHINA[10]=1262645000 /10000000 ;   <!--  2000  -->
+	 
+	  for(i = 0; i < 11; i++) {
+	 
+     	 tableauScaleCHINA[i] = Math.pow( (3* Math.round(tableauScaleCHINA[i]) )/(4*Math.PI) , 1/3) ;	 
+ 		 tableauScaleCHINA[i] =  tableauScaleCHINA[i] /  4.57 ;     <!-- tableauScaleCHINA[0]= 4.57 -->   
+         tableauScaleCHINA[i] =  tableauScaleCHINA[i] * (4.57/2.627)  ;     <!-- for getting the right proportion comparing to USA  --> 		 
+	 }
+	 
+	 
+	 
+	
+	 for(i = 0; i < 117; i++) {
+	     tableauZCountryCHINA[i] = -35 + (0.15*i) ;
+		 		 
+	 }
+     
+	 
+	 
+
+     for(i = 0; i < 117; i++) {
+
+     var mysphere = document.createElement('a-entity');	 
+		   
+	 tableauZCountryCHINA[i] = ( tableauZCountryCHINA[i]).toString() ;
+	 tableauYLifeCHINA[i]=((tableauYLifeCHINA[i]-25)*1/3)-10;
+	 tableauXGDPCHINA[i]=((Math.log(tableauXGDPCHINA[i])-4) *5)-20  ;     	 
+	
+	 
+	 var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"60000"); 
+	 mysphere.setAttribute('visible',"true");
+	
+	 		
+		
+	 myrotate.setAttribute('from',    tableauXGDPCHINA[0]+" "+tableauYLifeCHINA[0]+" "+tableauZCountryCHINA[0]);  		
+ 
+	 myrotate.setAttribute('to',tableauXGDPCHINA[i]+" "+tableauYLifeCHINA[i]+" "+tableauZCountryCHINA[i]     ); 
+	                                                     
+	
+	<!-- myrotate.setAttribute('delay',"1000");-->	 
+	 
+	 mysphere.appendChild(myrotate);  
+	 mysphere.setAttribute('geometry',"primitive:sphere");
+	 mysphere.setAttribute('material',"color:red");	 
+         	 
+	 
+  
+      if (  0 <= i  &&  i< 10 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[0] + " " + tableauScaleCHINA[0] + " " + tableauScaleCHINA[0]);
+}
+	 
+	if (  10 <= i && i< 20 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[1] + " " + tableauScaleCHINA[1] + " " + tableauScaleCHINA[1]);
+}
+	 
+	 if ( 20 <= i && i< 30 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[2] + " " + tableauScaleCHINA[2] + " " + tableauScaleCHINA[2]);
+}
+	 
+	 if (30 <= i && i< 40) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[3] + " " + tableauScaleCHINA[3] + " " + tableauScaleCHINA[3]);
+}
+	 
+	 if (40 <= i &&  i< 50) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[4] + " " + tableauScaleCHINA[4] + " " + tableauScaleCHINA[4]);
+}
+	 
+	 if (50 <= i && i< 60 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[5] + " " + tableauScaleCHINA[5] + " " + tableauScaleCHINA[5]);
+}
+	 
+	 if ( 60 <= i &&  i< 70 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[6] + " " + tableauScaleCHINA[6] + " " + tableauScaleCHINA[6]);
+}
+	 
+	 if (70 <= i && i< 80 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[7] + " " + tableauScaleCHINA[7] + " " + tableauScaleCHINA[7]);
+}
+	 
+	 if (80 <= i && i< 90 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[8] + " " + tableauScaleCHINA[8].toString() + " " + tableauScaleCHINA[8]);
+}
+	 
+	
+	 if (90 <= i  && i < 100 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[9] + " " + tableauScaleCHINA[9].toString() + " " + tableauScaleCHINA[9]);
+} 
+	
+  	
+	 
+	  if (100 <= i   &&  i< 117 ) {
+     mysphere.setAttribute('scale',tableauScaleCHINA[10] + " " + tableauScaleCHINA[10] + " " + tableauScaleCHINA[10]);
+}
+	
+   
+	
+ 	  
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mysphere);
+	 
+	 
+	 
+	 }
+	 
+</script>
+
+<a-sky color="black"></a-sky>
+    <!--  <a-entity position="0 2 3.7">      <a-entity camera look-controls wasd-controls></a-entity>         </a-entity>  -->
+     
+</a-scene>
+
+</body>
+</html>
+
+
+
+
