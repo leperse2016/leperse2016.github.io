@@ -1,13 +1,5 @@
 
-
-
 var scene = document.querySelector('a-scene');
-
-
-
-
-	
-
 
 
  
@@ -41,30 +33,3 @@ for (j = 0; j < 11; j++) {
  }
  
  
-
-
-  
-  
-    
- 
-
-
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
