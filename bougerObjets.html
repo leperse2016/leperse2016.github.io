@@ -1,0 +1,359 @@
+
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
+<!-- <script src="https://unpkg.com/aframe-controller-cursor-component@0.2.x/dist/aframe-controller-cursor-component.min.js"></script> -->
+<!--<script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/random-color.js"></script> -->
+<!-- <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/snap.js"></script> -->
+<!-- <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/intersection-spawn.js"></script> -->
+
+  <script src="aframe-master.js"></script>
+	
+	
+ 
+
+    <script src="aabb-collider.js"></script>
+
+    <script src="grab.js"></script>
+
+    <script src="ground.js"></script>
+
+    <script src="skyGradient.js"></script>
+
+  
+
+
+
+
+
+
+<body>
+  <a-scene>
+    <a-assets>
+    <!--  <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">  -->
+	 <img id="groundTexture" src="quadrille.jpg">
+      <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">  
+    
+  
+
+
+<!--<a-mixin id="voxel"  geometry="primitive: box; height: 0.5; width: 0.5; depth: 0.5"  material="shader: standard"  random-color 
+             snap="offset: 0.25 0.25 0.25; snap: 0.5 0.5 0.5"   ></a-mixin> -->
+	  
+
+<a-mixin id="voxel"  geometry="primitive: cylinder; height: 1; radius: 0.1"  material="shader: standard"  
+             snap="offset: 0.001 0.001 0.001; snap: 0.001 0.001 0.001"   ></a-mixin>  
+	  
+	  
+		
+		<a-mixin id="textIncomePerPerson"    text="align: center; width: 26;  value: Income per person, LOG"  ></a-mixin>		
+		<a-mixin id="textIncomePerPersonLinear"  text="align: center; width: 26; value: Income per person, Linear"  ></a-mixin>
+		
+	    <a-mixin id="china"  text="align: center; width: 26; value: China"  ></a-mixin>
+        <a-mixin id="usa"    text="align: center; width: 26; value: USA"    ></a-mixin>		
+			
+			
+        <a-mixin id="text1000"   text="align: center; width: 20;  value: 1000$"  ></a-mixin>		
+		<a-mixin id="text2000"   text="align: center; width: 20;  value: 2000$"  ></a-mixin>
+		<a-mixin id="text4000"   text="align: center; width: 20;  value: 4000$"  ></a-mixin>
+	    <a-mixin id="text8000"   text="align: center; width: 20;  value: 8000$"  ></a-mixin>
+		<a-mixin id="text16000"  text="align: center; width: 20;  value: 16000$" ></a-mixin>
+		<a-mixin id="text32000"  text="align: center; width: 20;  value: 32000$" ></a-mixin>
+		<a-mixin id="text50000"  text="align: center; width: 20;  value: 50000$"  ></a-mixin>
+		<a-mixin id="text64000"  text="align: center; width: 20;  value: 64000$"   ></a-mixin>
+		
+
+
+
+			
+		<a-mixin id="text1800"  text="align: center; width: 10;color:white;  value: 1800"  ></a-mixin>		
+		<a-mixin id="text1820"  text="align: center; width: 10;color:white;  value: 1820"  ></a-mixin>				
+		<a-mixin id="text1840"  text="align: center; width: 10;color:white;  value: 1840"  ></a-mixin>				
+		<a-mixin id="text1860"  text="align: center; width: 10;color:white;  value: 1860"  ></a-mixin>		
+		<a-mixin id="text1880"  text="align: center; width: 10;color:white;  value: 1880"  ></a-mixin>							
+		<a-mixin id="text1900"  text="align: center; width: 10;color:white;  value: 1900"  ></a-mixin>		
+		<a-mixin id="text1920"  text="align: center; width: 10;color:white;  value: 1920"  ></a-mixin>		
+		<a-mixin id="text1940"  text="align: center; width: 10;color:white;  value: 1940"  ></a-mixin>				
+		<a-mixin id="text1960"  text="align: center; width: 10; color:white; value: 1960"  ></a-mixin>			
+		<a-mixin id="text1980"  text="align: center; width: 10;color:white;  value: 1980"  ></a-mixin>		
+		<a-mixin id="text2000"  text="align: center; width: 10;color:white;  value: 2000"  ></a-mixin>		
+	    <a-mixin id="text2015"  text="align: center; width: 10;color:white;  value: 2015"  ></a-mixin>	
+	
+	  
+    </a-assets>
+
+
+
+<a-cylinder id="ground" src="#groundTexture" radius="30" height="0.1" position ="0 -1 0"> 
+   
+
+<a-text mixin="textIncomePerPerson"                     color="blue"                position="5 2 -5" wrap-count="180" ></a-text>
+<a-text mixin="usa"                                     color="blue"                position="5 1.5 -5"wrap-count="180" ></a-text>
+
+<a-text mixin="textIncomePerPersonLinear"               color="blue"                position="-5 5 -5" wrap-count="180" ></a-text>
+<a-text mixin="usa"                                     color="blue"                position="-5 4.5 -5"wrap-count="180" ></a-text>
+
+
+
+
+
+     
+   
+<!-- usa -->   
+<a-text mixin="text1800"        color="blue"                                   position="-1.2 .2 0"       wrap-count="180" ></a-text>
+<a-text mixin="text1820"        color="blue"                                   position="-1.2 .2 -.4"     wrap-count="180" ></a-text>
+<a-text mixin="text1840"        color="blue"                                   position="-1.2 .2 -.8"     wrap-count="180" ></a-text>
+<a-text mixin="text1860"        color="blue"                                   position="-1.2 .2 -1.2"    wrap-count="180" ></a-text>
+<a-text mixin="text1880"        color="blue"                                   position="-1.2 .2 -1.6"      wrap-count="180" ></a-text>
+<a-text mixin="text1900"        color="blue"                                   position="-1.2 .2 -2"        wrap-count="180"></a-text>
+<a-text mixin="text1920"        color="blue"                                   position="-1.2 .2 -2.4"      wrap-count="180"></a-text>
+<a-text mixin="text1940"        color="blue"                                   position="-1.2 .2 -2.8"      wrap-count="180"></a-text>
+<a-text mixin="text1960"        color="blue"                                   position="-1.2 .2 -3.2"      wrap-count="180"></a-text>
+<a-text mixin="text1980"        color="blue"                                   position="-1.2 .2 -3.6"      wrap-count="180"></a-text>
+<a-text mixin="text2015"        color="blue"                                   position="-1.2 .2 -4"        wrap-count="180"></a-text>
+
+<a-text mixin="text1800"        color="blue" rotation="0 180 0"                position="-1.2 .2 0"       wrap-count="180" ></a-text>
+<a-text mixin="text1820"        color="blue" rotation="0 180 0"                position="-1.2 .2 -.4"     wrap-count="180" ></a-text>
+<a-text mixin="text1840"        color="blue" rotation="0 180 0"                position="-1.2 .2 -.8"     wrap-count="180" ></a-text>
+<a-text mixin="text1860"        color="blue" rotation="0 180 0"                position="-1.2 .2 -1.2"    wrap-count="180" ></a-text>
+<a-text mixin="text1880"        color="blue" rotation="0 180 0"                position="-1.2 .2 -1.6"      wrap-count="180" ></a-text>
+<a-text mixin="text1900"        color="blue" rotation="0 180 0"                position="-1.2 .2 -2"        wrap-count="180"></a-text>
+<a-text mixin="text1920"        color="blue" rotation="0 180 0"                position="-1.2 .2 -2.4"      wrap-count="180"></a-text>
+<a-text mixin="text1940"        color="blue" rotation="0 180 0"                position="-1.2 .2 -2.8"      wrap-count="180"></a-text>
+<a-text mixin="text1960"        color="blue" rotation="0 180 0"                position="-1.2 .2 -3.2"      wrap-count="180"></a-text>
+<a-text mixin="text1980"        color="blue" rotation="0 180 0"                position="-1.2 .2 -3.6"      wrap-count="180"></a-text>
+<a-text mixin="text2015"        color="blue" rotation="0 180 0"                position="-1.2 .2 -4"        wrap-count="180"></a-text>
+	
+<a-text mixin="text1800"        color="blue"                                   position="1.2 .2 0"       wrap-count="180" ></a-text>
+<a-text mixin="text1820"        color="blue"                                   position="1.2 .2 -.4"     wrap-count="180" ></a-text>
+<a-text mixin="text1840"        color="blue"                                   position="1.2 .2 -.8"     wrap-count="180" ></a-text>
+<a-text mixin="text1860"        color="blue"                                   position="1.2 .2 -1.2"    wrap-count="180" ></a-text>
+<a-text mixin="text1880"        color="blue"                                   position="1.2 .2 -1.6"      wrap-count="180" ></a-text>
+<a-text mixin="text1900"        color="blue"                                   position="1.2 .2 -2"        wrap-count="180"></a-text>
+<a-text mixin="text1920"        color="blue"                                   position="1.2 .2 -2.4"      wrap-count="180"></a-text>
+<a-text mixin="text1940"        color="blue"                                   position="1.2 .2 -2.8"      wrap-count="180"></a-text>
+<a-text mixin="text1960"        color="blue"                                   position="1.2 .2 -3.2"      wrap-count="180"></a-text>
+<a-text mixin="text1980"        color="blue"                                   position="1.2 .2 -3.6"      wrap-count="180"></a-text>
+<a-text mixin="text2015"        color="blue"                                   position="1.2 .2 -4"        wrap-count="180"></a-text>
+
+<a-text mixin="text1800"        color="blue" rotation="0 180 0"                position="1.2 .2 0"       wrap-count="180" ></a-text>
+<a-text mixin="text1820"        color="blue" rotation="0 180 0"                position="1.2 .2 -.4"     wrap-count="180" ></a-text>
+<a-text mixin="text1840"        color="blue" rotation="0 180 0"                position="1.2 .2 -.8"     wrap-count="180" ></a-text>
+<a-text mixin="text1860"        color="blue" rotation="0 180 0"                position="1.2 .2 -1.2"    wrap-count="180" ></a-text>
+<a-text mixin="text1880"        color="blue" rotation="0 180 0"                position="1.2 .2 -1.6"      wrap-count="180" ></a-text>
+<a-text mixin="text1900"        color="blue" rotation="0 180 0"                position="1.2 .2 -2"        wrap-count="180"></a-text>
+<a-text mixin="text1920"        color="blue" rotation="0 180 0"                position="1.2 .2 -2.4"      wrap-count="180"></a-text>
+<a-text mixin="text1940"        color="blue" rotation="0 180 0"                position="1.2 .2 -2.8"      wrap-count="180"></a-text>
+<a-text mixin="text1960"        color="blue" rotation="0 180 0"                position="1.2 .2 -3.2"      wrap-count="180"></a-text>
+<a-text mixin="text1980"        color="blue" rotation="0 180 0"                position="1.2 .2 -3.6"      wrap-count="180"></a-text>
+<a-text mixin="text2015"        color="blue" rotation="0 180 0"                position="1.2 .2 -4"        wrap-count="180"></a-text>
+
+
+
+<a-text mixin="text1000"                                            position="-2 .5 0" wrap-count="180"  color="blue"></a-text>
+<a-text mixin="text2000"                                            position="-2 .5 -.57143" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text4000"                                            position="-2 .5 -1.14285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text8000"                                            position="-2 .5 -1.71428" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text16000"                                           position="-2 .5 -2.28572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text32000"                                           position="-2 1 -2.8572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text50000"                                           position="-2 3 -3.4285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text64000"                                           position="-2 5 -4" wrap-count="180" color="blue"></a-text>     
+ 
+<a-text mixin="text1000"           rotation="0 180 0"               position="-2 .5 0" wrap-count="180"  color="blue"></a-text>
+<a-text mixin="text2000"           rotation="0 180 0"               position="-2 .5 -.57143" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text4000"           rotation="0 180 0"               position="-2 .5 -1.14285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text8000"           rotation="0 180 0"               position="-2 .5 -1.71428" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text16000"          rotation="0 180 0"               position="-2 .5 -2.28572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text32000"          rotation="0 180 0"               position="-2 1 -2.8572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text50000"          rotation="0 180 0"               position="-2 3 -3.4285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text64000"          rotation="0 180 0"               position="-2 5 -4" wrap-count="180" color="blue"></a-text>     
+
+
+<a-text mixin="text1000"                                            position="2 .5 0" wrap-count="180"  color="blue"></a-text>
+<a-text mixin="text2000"                                            position="2 .5 -.57143" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text4000"                                            position="2 .5 -1.14285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text8000"                                            position="2 .5 -1.71428" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text16000"                                           position="2 1 -2.28572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text32000"                                           position="2 1.5 -2.8572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text50000"                                           position="2 1.5 -3.4285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text64000"                                           position="2 1.5 -4" wrap-count="180" color="blue"></a-text>     
+
+<a-text mixin="text1000"          rotation="0 180 0"                position="2 .5 0" wrap-count="180"  color="blue"></a-text>
+<a-text mixin="text2000"          rotation="0 180 0"                position="2 .5 -.57143" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text4000"          rotation="0 180 0"                position="2 .5 -1.14285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text8000"          rotation="0 180 0"                position="2 .5 -1.71428" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text16000"         rotation="0 180 0"                position="2 1 -2.28572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text32000"         rotation="0 180 0"                position="2 1.5 -2.8572" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text50000"         rotation="0 180 0"                position="2 1.5 -3.4285" wrap-count="180" color="blue"></a-text>
+<a-text mixin="text64000"         rotation="0 180 0"                position="2 1.5 -4" wrap-count="180" color="blue"></a-text>  
+
+   
+
+</a-cylinder>
+	
+<!-- end of usa -->	
+	
+	
+    <a-sky id="background" src="#skyTexture" theta-length="90" radius="300"></a-sky> 
+   
+    <!-- Hands. -->
+    <a-entity id="teleHand" hand-controls="left" teleport-controls="type: parabolic;  #ground"></a-entity>
+	 <!--<a-entity id="teleHand" hand-controls="right" teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity> -->
+         
+	 
+    <!-- <a-entity id="blockHand" hand-controls="right" controller-cursor></a-entity> -->
+    <!-- <a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity> -->
+    <!--     <a-entity id="blockHand" hand-controls="right" controller-cursor incsize="event: click;"></a-entity>  -->
+	<!--	 <a-entity id="blockHand" hand-controls="right" controller-cursor incsize"></a-entity> -->
+
+	<a-entity hand-controls="right" aabb-collider="objects: .voxel;" grab></a-entity>
+	
+	
+<script>
+AFRAME.registerComponent('incsize', {
+
+init: function(){
+
+this.el.addEventListener('click',function(){
+
+var size = this.getAttribute('scale');
+var scalestring = String(size.x +1);
+this.setAttribute('scale', scalestring.concat(" ",scalestring," ",scalestring) );
+
+var couleur = this.getAttribute('color');
+this.setAttribute('material',"color:red");
+
+
+
+});
+}
+});
+</script>
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+   
+<script      src="plancherBougerObjets.js">  </script> 
+  
+
+
+   
+
+</a-cylinder>
+	
+	
+ 
+<!-- usa representation ----------------------------------------------------------------------------------->
+
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1; radius:0.1"          position="1.5 -0.5 -0"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.06; radius:0.1"       position="1.5 -.47 -.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.06; radius:0.1"          position="1.5 -.47 -.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.08; radius:0.1"          position="1.5 -.46 -.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.14; radius:0.1"           position="1.5 -.43 -.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.18; radius:0.1"           position="1.5 -.42 -1"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.26; radius:0.1"           position="1.5 -.37 -1.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.3; radius:0.1"           position="1.5 -.35 -1.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.42; radius:0.1"          position="1.5 -.29 -1.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.46; radius:0.1"           position="1.5 -.27 -1.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.54; radius:0.1"          position="1.5 -.23 -2"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.62; radius:0.1"          position="1.5 -.19 -2.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.66; radius:0.1"           position="1.5 -.17 -2.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.74; radius:0.1"           position="1.5 -.13 -2.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.74; radius:0.1"           position="1.5 -.13 -2.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.87; radius:0.1"         position="1.5 -.065 -3"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:1.96; radius:0.1"          position="1.5 -.02 -3.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:2.08; radius:0.1"          position="1.5 .04 -3.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:2.08; radius:0.1"          position="1.5 .04 -3.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:2.27; radius:0.1"         position="1.5 .14 -3.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"  material="opacity: 1;color: blue"   geometry="height:2.36; radius:0.1"          position="1.5 .18 -4"></a-entity>
+                                                                           
+<!-- linear -->
+
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.2; radius:0.1"       position="-1.5 -.9 0"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.22; radius:0.1"        position="-1.5 -.89 -.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.35; radius:0.1"        position="-1.5 -.825 -.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.49; radius:0.1"        position="-1.5 -.75 -.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.57; radius:0.1"        position="-1.5 -0.715 -.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.7; radius:0.1"        position="-1.5 -.65 -1"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.65; radius:0.1"        position="-1.5 -.625 -1.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.84; radius:0.1"        position="-1.5 -.58 -1.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:0.9; radius:0.1"        position="-1.5 -.55 -1.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:1.24; radius:0.1"        position="-1.5 -.38 -1.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:1.302; radius:0.1"        position="-1.5 -0.3499 -2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:1.526; radius:0.1"        position="-1.5 -0.237 -2.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:1.856; radius:0.1"        position="-1.5 -0.072 -2.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:2.09; radius:0.1"        position="-1.5 .045 -2.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:2.564; radius:0.1"        position="-1.5 .282 -2.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:3.438; radius:0.1"        position="-1.5 .719 -3"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:3.7; radius:0.1"        position="-1.5  .85 -3.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:4.718; radius:0.1"        position="-1.5 1.359 -3.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:5.164; radius:0.1"        position="-1.5 1.582 -3.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:5.718; radius:0.1"        position="-1.5 1.859 -3.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="opacity: 1;color: blue"      geometry="height:8.56; radius:0.1"        position="-1.5 3.28 -4"></a-entity>
+
+<!-- END  OF  usa representation ----------------------------------------------------------------------------------->
+    
+
+<!-- log china-->
+
+<a-entity class="voxel" mixin="voxel"   material="color: red"    geometry="height:.3; radius:0.1"    incsize     position="1.5 -.85 0"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"   geometry="height:.342; radius:0.1"   incsize     position="1.5 -0.829 -.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:.56; radius:0.1"  incsize     position="1.5 -.72 -.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"   geometry="height:.7; radius:0.1"  incsize     position="1.5 -.65 -.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:.76; radius:0.1"  incsize     position="1.5 -.62 -.8"></a-entity>
+
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:.85; radius:0.1"  incsize     position="1.5 -.57 -1"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:.81; radius:0.1"  incsize     position="1.5 -.595 -1.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:.92; radius:0.1"  incsize     position="1.5 -.54 -1.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"      geometry="height:.95; radius:0.1" incsize     position="1.5 -.52 -1.6"></a-entity>
+
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.09; radius:0.1" incsize     position="1.5 -.45 -1.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.11; radius:0.1" incsize     position="1.5 -.44 -2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.18; radius:0.1" incsize     position="1.5 -.41 -2.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.27; radius:0.1"  incsize     position="1.5 -.36 -2.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.32; radius:0.1" incsize     position="1.5 -.34 -2.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.4; radius:0.1"  incsize     position="1.5 -.35 -2.8"></a-entity>
+ 
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.54; radius:0.1"  incsize     position="1.5 -.23 -3"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.57; radius:0.1"  incsize     position="1.5 -.22 -3.2"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.67; radius:0.1" incsize     position="1.5 -.12 -3.4"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.72; radius:0.1"  incsize     position="1.5 -.14 -3.6"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.76; radius:0.1" incsize     position="1.5 -.12 -3.8"></a-entity>
+<a-entity class="voxel" mixin="voxel"   material="color: red"     geometry="height:1.93; radius:0.1" incsize     position="1.5 -.03 -4"></a-entity>
+	
+<!-- linear china-->
+
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.25; radius:0.1" incsize        position="-1.5 -.875 0"></a-entity> 
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.32; radius:0.1" incsize        position="-1.5 -.84 -.2"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.32; radius:0.1" incsize        position="-1.5 -.84 -.4"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.35; radius:0.1" incsize        position="-1.5 -.825 -.6"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.35; radius:0.1" incsize        position="-1.5 -.825 -.8"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.36; radius:0.1" incsize        position="-1.5 -.82 -1"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.37; radius:0.1" incsize        position="-1.5 -.815 -1.2"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.41; radius:0.1" incsize        position="-1.5 -.795 -1.4"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.5; radius:0.1"  incsize        position="-1.5 -.75 -1.6"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.65; radius:0.1"  incsize       position="-1.5 -.675 -1.8"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.72; radius:0.1"  incsize       position="-1.5 -.64 -2"></a-entity>
+
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:.85; radius:0.1"  incsize       position="-1.5 -0.575 -2.2"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:1.04; radius:0.1"  incsize      position="-1.5 -.48 -2.4"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:1.12; radius:0.1"  incsize      position="-1.5 -.44 -2.6"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:1.13; radius:0.1"  incsize      position="-1.5 -.44 -2.8"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"   geometry="height:1.13; radius:0.1"  incsize      position="-1.5 -.44 -3"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"    geometry="height:1.88; radius:0.1"  incsize     position="-1.5 -.06 -3.2"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"    geometry="height:2.27; radius:0.1"  incsize     position="-1.5 .13 -3.4"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"    geometry="height:3; radius:0.1"   incsize    position="-1.5 .5 -3.6"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"    geometry="height:4.63; radius:0.1" incsize      position="-1.5 1.32 -3.8"></a-entity>
+<a-entity class="voxel" mixin="voxel" material="color: red"    geometry="height:5.75; radius:0.1" incsize      position="-1.5 1.875  -4"></a-entity>
+  
+
+
+  	
+  </a-scene>
+</body>
