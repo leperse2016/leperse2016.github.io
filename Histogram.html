@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <title>Histogram</title>
+		
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+	
+     <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">      
+	      
+<!--	  <img id="mytexture" src="https://ucarecdn.com/3ae64896-d4f4-46dd-b7e1-93a327b5f1c9/">  -->
+
+	  
+	 	
+ </a-assets>
+ 
+<!-- <a-entity geometry="primitive: box; width: 2; depth:2; height:1; "
+          material="src: #mytexture; repeat: 5 5; side: back;"></a-entity>  -->
+ 
+
+	
+	
+<!-- <a-sky id="background" src="#skyTexture" theta-length="90" radius="3000"></a-sky>  -->
+
+
+
+<!-- the years labels -->
+<a-text value="1970"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .8" rotation="-90 0 0" ></a-text> 
+<a-text value="1972"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .72" rotation="-90 0 0" ></a-text> 
+<a-text value="1974"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .64" rotation="-90 0 0" ></a-text> 
+<a-text value="1976"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .56" rotation="-90 0 0" ></a-text> 
+<a-text value="1978"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .48" rotation="-90 0 0" ></a-text> 
+<a-text value="1980"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .42" rotation="-90 0 0" ></a-text> 
+<a-text value="1982"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .34" rotation="-90 0 0" ></a-text> 
+<a-text value="1984"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .26" rotation="-90 0 0" ></a-text> 
+<a-text value="1986"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .18" rotation="-90 0 0" ></a-text> 
+<a-text value="1988"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .1" rotation="-90 0 0" ></a-text> 
+<a-text value="1990"        color="white"  width="5" wrap-count="180"  position="-.95 .03 .02" rotation="-90 0 0" ></a-text> 
+<a-text value="1992"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.06" rotation="-90 0 0" ></a-text> 
+<a-text value="1994"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.14" rotation="-90 0 0" ></a-text> 
+<a-text value="1996"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.22" rotation="-90 0 0" ></a-text> 
+<a-text value="1998"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.3" rotation="-90 0 0" ></a-text> 
+<a-text value="2000"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.38" rotation="-90 0 0" ></a-text> 
+<a-text value="2002"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.46" rotation="-90 0 0" ></a-text> 
+<a-text value="2004"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.54" rotation="-90 0 0" ></a-text> 
+<a-text value="2006"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.62" rotation="-90 0 0" ></a-text> 
+<a-text value="2008"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.7" rotation="-90 0 0" ></a-text> 
+<a-text value="2010"        color="white"  width="5" wrap-count="180"  position="-.95 .03 -.8" rotation="-90 0 0" ></a-text> 
+
+<a-text value="Academic Year"        color="white"  width="5" wrap-count="180"  position="-1.1 .03 .02" rotation="-90 90 0" ></a-text> 
+
+
+<!-- the department labels -->
+
+
+
+<a-text value="Departement"         color="white"     width="8" wrap-count="180"  position="-.2 .03 1.25" rotation="-90 0 0" ></a-text> 
+
+<a-text value="Agriculture"         color="red"       width="5" wrap-count="180"  position="-.7 .03 .9" rotation="-90 -90 0" ></a-text> 
+
+<a-text value="Business"            color="lightblue" width="5" wrap-count="180"  position="-.45 .03 .9" rotation="-90 -90 0" ></a-text> 
+<a-text value="Architecture"        color="yellow"    width="5" wrap-count="180"  position="-.2 .03 .9" rotation="-90 -90 0" ></a-text> 
+
+<a-text value="Computer"            color="green"     width="5" wrap-count="180"  position=".1 .03 .9" rotation="-90 -90 0" ></a-text> 
+<a-text value="Science"             color="green"     width="5" wrap-count="180"  position=".15 .03 .9" rotation="-90 -90 0" ></a-text> 
+
+<a-text value="Physical"            color="blue"      width="5" wrap-count="180"  position=".4 .03 .9" rotation="-90 -90 0" ></a-text> 
+<a-text value="Sciences"            color="blue"      width="5" wrap-count="180"  position=".45 .03 .9" rotation="-90 -90 0" ></a-text> 
+
+<a-text value="Engineering"         color="orange"    width="5" wrap-count="180"  position=".7 .03 .9" rotation="-90 -90 0" ></a-text> 
+
+<!-- the principal black table		-->
+<a-box depth="2.3"   height=".1"  width="2.3"       opacity="1"  color="black"  position="0 -.02 0"></a-box>  
+<!-- the principal white table		-->
+<a-box depth="1.6" height=".07"  width="1.6"     opacity="1"  color="white"  position="0 0 0"></a-box> 
+
+
+
+<!-- the principal percentage lines with their respective labels (.25,.5,.75,1)		-->
+<a-entity line="start: -.8, 0.25, .8;  end: -.8 0.25 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 0.5, .8;  end: -.8 0.5 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 0.75, .8; end: -.8 0.75 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 1, .8;    end: -.8 1 -.8; color: white"    ></a-entity>
+
+<a-entity line="start: -.8, 0.25, -.8;  end: .8 0.25 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 0.5, -.8;  end: .8 0.5 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 0.75, -.8; end: .8 0.75 -.8; color: white"    ></a-entity>
+<a-entity line="start: -.8, 1, -.8;    end: .8 1 -.8; color: white"    ></a-entity>
+
+<a-entity line="start: .8, 0.25, .8;   end: .8 0.25 -.8;  color: white"    ></a-entity>
+<a-entity line="start: .8, 0.5, .8;   end: .8 0.5 -.8;  color: white"    ></a-entity>
+<a-entity line="start: .8, 0.75, .8;  end: .8 0.75 -.8; color: white"    ></a-entity>
+<a-entity line="start: .8, 1, .8;     end: .8 1 -.8;    color: white"    ></a-entity>
+
+<a-text value="0.25"  color="white"  width="5" wrap-count="180"  position="-.8, 0.25, 1" rotation="0 90 0" ></a-text> 
+<a-text value="0.25"  color="white"  width="5" wrap-count="180"  position="-.8, 0.25, 1" rotation="0 -90 0" ></a-text> 
+<a-text value="0.5"  color="white"  width="5" wrap-count="180"  position="-.8, 0.5, 1" rotation="0 90 0" ></a-text> 
+<a-text value="0.5"  color="white"  width="5" wrap-count="180"  position="-.8, 0.5, 1" rotation="0 -90 0" ></a-text> 
+<a-text value="0.75"  color="white"  width="5" wrap-count="180"  position="-.8, 0.75, 1" rotation="0 90 0" ></a-text> 
+<a-text value="0.75"  color="white"  width="5" wrap-count="180"  position="-.8, 0.75, 1" rotation="0 -90 0" ></a-text> 
+<a-text value="1"  color="white"  width="5" wrap-count="180"  position="-.8, 1, 1" rotation="0 90 0" ></a-text> 
+<a-text value="1"  color="white"  width="5" wrap-count="180"  position="-.8, 1, 1" rotation="0 -90 0" ></a-text> 
+
+
+<a-text value="Percentage of Bachelors accorded to Women"  color="white"  width="5" wrap-count="180"  position="-.8, 0.25, 1.2" rotation="0 90 90" ></a-text>
+<a-text value="Percentage of Bachelors accorded to Women"  color="white"  width="5" wrap-count="180"  position="-.8, 0.25, 1.2" rotation="0 -90 90" ></a-text>
+
+
+<!-- end of principal percentage lines -->
+
+
+<!-- the principal white board line on the floor -->
+<a-entity line="start: -.8, 0.05, -.8; end: .8 0.05 -.8; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.7; end: .8 0.05 -.7; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.6; end: .8 0.05 -.6; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.5; end: .8 0.05 -.5; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.4; end: .8 0.05 -.4; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.3; end: .8 0.05 -.3; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.2; end: .8 0.05 -.2; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, -.1; end: .8 0.05 -.1; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, 0;   end: .8 0.05 0;   color: black"    ></a-entity>
+
+<a-entity line="start: -.8, 0.05, .8; end: .8 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .7; end: .8 0.05 .7; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .6; end: .8 0.05 .6; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .5; end: .8 0.05 .5; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .4; end: .8 0.05 .4; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .3; end: .8 0.05 .3; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .2; end: .8 0.05 .2; color: black"    ></a-entity>
+<a-entity line="start: -.8, 0.05, .1; end: .8 0.05 .1; color: black"    ></a-entity>
+
+
+
+<a-entity line="start: -.8, 0.05, -.8;  end: -.8 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.7, 0.05, -.8;  end: -.7 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.6, 0.05, -.8;  end: -.6 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.5, 0.05, -.8;  end: -.5 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.4, 0.05, -.8;  end: -.4 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.3, 0.05, -.8;  end: -.3 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.2, 0.05, -.8;  end: -.2 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: -.1, 0.05, -.8;  end: -.1 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: 0, 0.05, -.8;    end: 0 0.05 .8; color: black"    ></a-entity>
+
+<a-entity line="start: .8, 0.05, -.8;  end: .8 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .7, 0.05, -.8;  end: .7 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .6, 0.05, -.8;  end: .6 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .5, 0.05, -.8;  end: .5 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .4, 0.05, -.8;  end: .4 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .3, 0.05, -.8;  end: .3 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .2, 0.05, -.8;  end: .2 0.05 .8; color: black"    ></a-entity>
+<a-entity line="start: .1, 0.05, -.8;  end: .1 0.05 .8; color: black"    ></a-entity>
+<!-- end the principal wihte board line on the floor -->
+
+
+
+<script>
+
+    <!-- z axis for years from 1970 to 2010 -->
+	var tabZyears = new Array(40);
+	for(i = 0; i < 40; i++) {
+      tabZyears[i] = .8 + (-.04*i );		
+     }
+	 
+    <!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = -.7;
+		     
+
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYagriculture = new Array(40);
+     
+	 tabYagriculture[0]= .0423;
+	 tabYagriculture[1]= .0545;
+	 tabYagriculture[2]= .0742;
+	 tabYagriculture[3]= .0965;
+	 tabYagriculture[4]= .1407;
+	 tabYagriculture[5]= .1833;
+	 tabYagriculture[6]= .2225;
+	 tabYagriculture[7]= .2464;
+	 tabYagriculture[8]= .2715;
+	 tabYagriculture[9]= .2963;
+	 tabYagriculture[10]= .3132; 
+	 tabYagriculture[11]= .3264; 
+	 tabYagriculture[12]= .3164; 
+	 tabYagriculture[13]= .3109; 
+	 tabYagriculture[14]= .3138; 
+	 tabYagriculture[15]= .3120; 
+	 tabYagriculture[16]= .3149; 
+	 tabYagriculture[17]= .3109; 
+	 tabYagriculture[18]= .3161; 
+	 tabYagriculture[19]= .3270; 
+	 tabYagriculture[20]= .3471; 
+	 tabYagriculture[21]= .3393; 
+	 tabYagriculture[22]= .3495; 
+	 tabYagriculture[23]= .3603; 
+	 tabYagriculture[24]= .3684; 
+	 tabYagriculture[25]= .3897; 
+	 tabYagriculture[26]= .4069; 
+	 tabYagriculture[27]= .4191; 
+	 tabYagriculture[28]= .4289; 
+	 tabYagriculture[29]= .4506; 
+	 tabYagriculture[30]= .4587; 
+	 tabYagriculture[31]= .4713; 
+	 tabYagriculture[32]= .4794; 
+	 tabYagriculture[33]= .4789; 
+	 tabYagriculture[34]= .4767; 
+	 tabYagriculture[35]= .4679; 
+	 tabYagriculture[36]= .4761; 
+	 tabYagriculture[37]= .4757; 
+	 tabYagriculture[38]= .4867; 
+	 tabYagriculture[39]= .4873; 
+
+
+
+
+	 
+
+     for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYagriculture[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:red;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYagriculture[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 }
+	 
+	 
+	 
+	 
+	 
+	<!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = -.45; 
+	 
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYbusiness = new Array(40);
+    
+
+	 tabYbusiness[0]= 0.0906;
+	 tabYbusiness[1]= 0.0950;
+	 tabYbusiness[2]= 0.1056;
+	 tabYbusiness[3]= 0.1280;
+	 tabYbusiness[4]= 0.1620;
+	 tabYbusiness[5]= 0.1969;
+	 tabYbusiness[6]= 0.2343;
+	 tabYbusiness[7]= 0.2716;
+	 tabYbusiness[8]= 0.3053;
+	 tabYbusiness[9]= 0.3362;
+	 tabYbusiness[10]=0.3677; 
+	 tabYbusiness[11]=0.3927; 
+	 tabYbusiness[12]=0.4195; 
+	 tabYbusiness[13]=0.4354; 
+	 tabYbusiness[14]=0.4512; 
+	 tabYbusiness[15]=0.4575; 
+	 tabYbusiness[16]=0.4653; 
+	 tabYbusiness[17]=0.4669; 
+	 tabYbusiness[18]=0.4676; 
+	 tabYbusiness[19]=0.4678; 
+	 tabYbusiness[20]=0.4720; 
+	 tabYbusiness[21]=0.4722; 
+	 tabYbusiness[22]=0.4722; 
+	 tabYbusiness[23]=0.4764; 
+	 tabYbusiness[24]=0.4798; 
+	 tabYbusiness[25]=0.4857; 
+	 tabYbusiness[26]=0.4865; 
+	 tabYbusiness[27]=0.4856; 
+	 tabYbusiness[28]=0.4926; 
+	 tabYbusiness[29]=0.4981; 
+	 tabYbusiness[30]=0.4980; 
+	 tabYbusiness[31]=0.5028; 
+	 tabYbusiness[32]=0.5055; 
+	 tabYbusiness[33]=0.5035; 
+	 tabYbusiness[34]=0.4995; 
+	 tabYbusiness[35]=0.4979; 
+	 tabYbusiness[36]=0.4921; 
+	 tabYbusiness[37]=0.4900; 
+	 tabYbusiness[38]=0.4889; 
+	 tabYbusiness[39]=0.4884; 
+
+
+
+	 
+
+     for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYbusiness[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:lightblue;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYbusiness[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 }
+	 
+	 
+	
+	 
+	<!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = -.2; 
+	 
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYarchitecture = new Array(40);
+    
+
+	 tabYarchitecture[0]=0.1192 ;
+	 tabYarchitecture[1]=0.1200 ;
+	 tabYarchitecture[2]=0.1321 ;
+	 tabYarchitecture[3]=0.1479 ;
+	 tabYarchitecture[4]=0.1744 ;
+	 tabYarchitecture[5]=0.1913 ;
+	 tabYarchitecture[6]=0.2139 ;
+	 tabYarchitecture[7]=0.2374 ;
+	 tabYarchitecture[8]=0.2585 ;
+	 tabYarchitecture[9]=0.2777 ;
+	 tabYarchitecture[10]=0.2808; 	 
+	 tabYarchitecture[11]=0.2984; 
+	 tabYarchitecture[12]=0.3482; 
+	 tabYarchitecture[13]=0.3583; 
+	 tabYarchitecture[14]=0.3545; 
+	 tabYarchitecture[15]=0.3613; 
+	 tabYarchitecture[16]=0.3724; 
+	 tabYarchitecture[17]=0.3873; 
+	 tabYarchitecture[18]=0.3940; 
+	 tabYarchitecture[19]=0.3910; 
+	 tabYarchitecture[20]=0.4082; 
+	 tabYarchitecture[21]=0.3368; 
+	 tabYarchitecture[22]=0.3520; 
+	 tabYarchitecture[23]=0.3578; 
+	 tabYarchitecture[24]=0.3443; 
+	 tabYarchitecture[25]=0.3606; 
+	 tabYarchitecture[26]=0.3593; 
+	 tabYarchitecture[27]=0.3510; 
+	 tabYarchitecture[28]=0.3760; 
+	 tabYarchitecture[29]=0.3863; 
+	 tabYarchitecture[30]=0.4002; 
+	 tabYarchitecture[31]=0.4069; 
+	 tabYarchitecture[32]=0.4113; 
+	 tabYarchitecture[33]=0.4276; 
+	 tabYarchitecture[34]=0.4347; 
+	 tabYarchitecture[35]=0.4310; 
+	 tabYarchitecture[36]=0.4450; 
+	 tabYarchitecture[37]=0.4310; 
+	 tabYarchitecture[38]=0.4271; 
+	 tabYarchitecture[39]=0.4335; 
+
+	 
+
+     for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYarchitecture[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:yellow;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYarchitecture[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 }
+	 
+	 
+	 
+	
+	 
+	<!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = .12; 
+	 
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYcomputerscience = new Array(40);
+    
+
+	 tabYcomputerscience[0]=0.1360;
+	 tabYcomputerscience[1]=0.1360 ;
+	 tabYcomputerscience[2]=0.1490 ;
+	 tabYcomputerscience[3]=0.1640 ;
+	 tabYcomputerscience[4]=0.1890 ;
+	 tabYcomputerscience[5]=0.1980 ;
+	 tabYcomputerscience[6]=0.2390 ;
+	 tabYcomputerscience[7]=0.2570 ;
+	 tabYcomputerscience[8]=0.2810 ;
+	 tabYcomputerscience[9]=0.3020 ;
+	 tabYcomputerscience[10]=0.3250; 	 
+	 tabYcomputerscience[11]=0.3480; 
+	 tabYcomputerscience[12]=0.3630; 
+	 tabYcomputerscience[13]=0.3710; 
+	 tabYcomputerscience[14]=0.3680; 
+	 tabYcomputerscience[15]=0.3570; 
+	 tabYcomputerscience[16]=0.3470; 
+	 tabYcomputerscience[17]=0.3240; 
+	 tabYcomputerscience[18]=0.3080; 
+	 tabYcomputerscience[19]=0.2990; 
+	 tabYcomputerscience[20]=0.2940; 
+	 tabYcomputerscience[21]=0.2870; 
+	 tabYcomputerscience[22]=0.2820; 
+	 tabYcomputerscience[23]=0.2850; 
+	 tabYcomputerscience[24]=0.2850; 	 
+	 tabYcomputerscience[25]=0.2750; 
+	 tabYcomputerscience[26]=0.2710; 
+	 tabYcomputerscience[27]=0.2680; 
+	 tabYcomputerscience[28]=0.2700; 
+	 tabYcomputerscience[29]=0.2810; 
+	 tabYcomputerscience[30]=0.2770; 
+	 tabYcomputerscience[31]=0.2760; 
+	 tabYcomputerscience[32]=0.2700; 
+	 tabYcomputerscience[33]=0.2510; 
+	 tabYcomputerscience[34]=0.2220; 
+	 tabYcomputerscience[35]=0.2060; 
+	 tabYcomputerscience[36]=0.1860; 
+	 tabYcomputerscience[37]=0.1760; 
+	 tabYcomputerscience[38]=0.1780; 
+	 tabYcomputerscience[39]=0.1810; 
+
+
+
+
+     for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYcomputerscience[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:green;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYcomputerscience[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 }
+	 
+	 
+	 
+	
+
+<!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = .42; 
+	 
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYphysicalsciences = new Array(40);
+
+	 tabYphysicalsciences[0]=0.1380;
+	 tabYphysicalsciences[1]=0.1490 ;
+	 tabYphysicalsciences[2]=0.1480 ;
+	 tabYphysicalsciences[3]=0.1650 ;
+	 tabYphysicalsciences[4]=0.1820 ;
+	 tabYphysicalsciences[5]=0.1910 ;
+	 tabYphysicalsciences[6]=0.2000 ;
+	 tabYphysicalsciences[7]=0.2130 ;
+	 tabYphysicalsciences[8]=0.2250 ;
+	 tabYphysicalsciences[9]=0.2370 ;
+	 tabYphysicalsciences[10]=0.2460; 	 
+	 tabYphysicalsciences[11]=0.2570; 	 
+	 tabYphysicalsciences[12]=0.2730; 
+	 tabYphysicalsciences[13]=0.2760; 
+	 tabYphysicalsciences[14]=0.2800; 
+	 tabYphysicalsciences[15]=0.2750; 
+	 tabYphysicalsciences[16]=0.2840; 
+	 tabYphysicalsciences[17]=0.3040; 
+	 tabYphysicalsciences[18]=0.2970; 
+	 tabYphysicalsciences[19]=0.3130; 
+	 tabYphysicalsciences[20]=0.3160; 
+	 tabYphysicalsciences[21]=0.3260; 
+	 tabYphysicalsciences[22]=0.3260; 
+	 tabYphysicalsciences[23]=0.3360; 
+	 tabYphysicalsciences[24]=0.3480; 	 
+	 tabYphysicalsciences[25]=0.3590; 
+	 tabYphysicalsciences[26]=0.3730; 
+	 tabYphysicalsciences[27]=0.3830; 
+	 tabYphysicalsciences[28]=0.3970; 
+	 tabYphysicalsciences[29]=0.4020; 
+	 tabYphysicalsciences[30]=0.4100; 
+	 tabYphysicalsciences[31]=0.4220; 
+	 tabYphysicalsciences[32]=0.4110; 
+	 tabYphysicalsciences[33]=0.4170; 
+	 tabYphysicalsciences[34]=0.4210; 
+	 tabYphysicalsciences[35]=0.4160; 
+	 tabYphysicalsciences[36]=0.4080; 
+	 tabYphysicalsciences[37]=0.4070; 
+	 tabYphysicalsciences[38]=0.4070; 
+	 tabYphysicalsciences[39]=0.4020; 
+
+
+
+
+     for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYphysicalsciences[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:blue;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYphysicalsciences[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 }
+ 
+	 
+<!-- x axis for 6 majors from 1 to 6  : Agriculture, Architecture, Business,Computer Science, Engineering,	Physical Sciences -->
+	var tabXmajors = .7; 
+	 
+    <!-- in order to fit into our table, we divide each percentage result from 1971 to 2010  from the data file by 100. --> 
+	var tabYengineering = new Array(40);
+
+	 tabYengineering[0]=0.0080;
+	 tabYengineering[1]=0.0100 ;
+	 tabYengineering[2]=0.0120 ;
+	 tabYengineering[3]=0.0160 ;
+	 tabYengineering[4]=0.0220 ;
+	 tabYengineering[5]=0.0320 ;
+	 tabYengineering[6]=0.0450 ;
+	 tabYengineering[7]=0.0680 ;
+	 tabYengineering[8]=0.0840 ;
+	 tabYengineering[9]=0.0940 ;
+	 tabYengineering[10]=0.1030; 	 
+	 tabYengineering[11]=0.1160; 	 
+	 tabYengineering[12]=0.1240; 
+	 tabYengineering[13]=0.1310; 
+	 tabYengineering[14]=0.1350; 
+	 tabYengineering[15]=0.1350; 
+	 tabYengineering[16]=0.1390; 
+	 tabYengineering[17]=0.1400; 
+	 tabYengineering[18]=0.1390; 
+	 tabYengineering[19]=0.1410; 
+	 tabYengineering[20]=0.1410; 
+	 tabYengineering[21]=0.1400; 
+	 tabYengineering[22]=0.1450; 
+	 tabYengineering[23]=0.1490; 
+	 tabYengineering[24]=0.1570; 	 
+	 tabYengineering[25]=0.1620; 
+	 tabYengineering[26]=0.1670; 
+	 tabYengineering[27]=0.1700; 
+	 tabYengineering[28]=0.1780; 
+	 tabYengineering[29]=0.1860; 
+	 tabYengineering[30]=0.1840; 
+	 tabYengineering[31]=0.1900; 
+	 tabYengineering[32]=0.1870; 
+	 tabYengineering[33]=0.1880; 
+	 tabYengineering[34]=0.1820; 
+	 tabYengineering[35]=0.1790; 
+	 tabYengineering[36]=0.1680; 
+	 tabYengineering[37]=0.1680; 
+	 tabYengineering[38]=0.1650; 
+	 tabYengineering[39]=0.1680; 
+
+
+
+    for(i = 0; i < 40; i++) {
+
+     var mybox = document.createElement('a-entity');	
+
+	 
+     var myrotate = document.createElement('a-animation');
+	 myrotate.setAttribute('attribute',"position");
+	 myrotate.setAttribute('dur',"10000"); 
+	 mybox.setAttribute('visible',"true");
+	 myrotate.setAttribute('from',    (Math.random()*10).toString()+" "+(Math.random()*10).toString()+" "+(Math.random()*10).toString() )   ; 
+	 myrotate.setAttribute('to', tabXmajors+" "+(tabYengineering[i]/2)+" "+ tabZyears[i]    ); 
+	                                                          
+	 
+	 myrotate.setAttribute('delay',"1000");	 
+	 
+	 mybox.appendChild(myrotate);  
+		
+	 mybox.setAttribute('geometry',"primitive:box;");
+	 mybox.setAttribute('material',"color:orange;");	 
+     mybox.setAttribute('material',"opacity:1" );
+	 
+	mybox.setAttribute('geometry',"depth:.025");
+	mybox.setAttribute('geometry',"width:.05");
+	mybox.setAttribute('geometry',"height:"+tabYengineering[i]);	 
+    
+	 		 
+	var myscene = document.querySelector ('a-scene');
+	myscene.appendChild (mybox);
+	 
+	 
+	 
+	 } 
+	
+
+
+
+	
+	 
+</script>
+
+
+
+
+</a-scene>
+  
+</body>
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
